@@ -13,7 +13,7 @@ This application can provide the following function:
 This is the alpha release, if you come across any bug or have any suggestions, please E-mail jiankong3@gmail.com. Thanks.
 
 ## Sample Screen
-
+![Alt text](/img/samplescreen1.jpg?raw=true "Log in")
 
 ## Development and Test
 The application was developed and tested using Google Pixel Plus, the target screen size is 5.5 inch.
