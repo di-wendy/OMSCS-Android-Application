@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/ic_lock_idle_low_battery"
+    tools:context="com.parse.omscs_starter.Fragments.Fragment_course_INFO">
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="80dp"
+        android:text="Course ID:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="30dp"
+        android:text="Course Name:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="30dp"
+        android:text="Open in Summer:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="30dp"
+        android:text="Language:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="30dp"
+        android:text="Competition:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/course_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView17"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/textView18"
+        android:layout_toRightOf="@+id/textView18"
+        android:textColor="@color/goldhex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/course_id"
+        android:layout_alignStart="@+id/course_id"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_below="@+id/course_id"
+        android:textColor="@color/goldhex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/summer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/course_name"
+        android:layout_alignStart="@+id/course_name"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_below="@+id/course_name"
+        android:textColor="@color/goldhex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/summer"
+        android:layout_alignStart="@+id/summer"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_below="@+id/summer"
+        android:textColor="@color/goldhex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/competition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/language"
+        android:layout_alignStart="@+id/language"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_below="@+id/language"
+        android:textColor="@color/goldhex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/go_back"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/goldhex"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.omscs_starter.Fragments.TimerFragment">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:text="You're studying"
+        android:textColor="@color/goldhex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Spinner
+
+        android:id="@+id/current_course_spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/text_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/text_1"
+        android:drawSelectorOnTop="true"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/goldhex"
+        android:textSize="64sp"
+        android:layout_below="@+id/current_course_spinner"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Start_Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text="Start"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Pause_Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Start_Button"
+        android:layout_alignStart="@+id/Start_Button"
+        android:layout_below="@+id/Start_Button"
+        android:layout_marginTop="38dp"
+        android:text="PAUSE"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Reset_Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Pause_Button"
+        android:layout_alignStart="@+id/Pause_Button"
+        android:layout_below="@+id/Pause_Button"
+        android:layout_marginTop="39dp"
+        android:text="@string/reset" />
+
+</RelativeLayout>

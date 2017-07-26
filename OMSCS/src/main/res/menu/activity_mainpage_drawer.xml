@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/MainPage"
+            android:icon="@android:drawable/ic_menu_revert"
+            android:title="@string/main_page" />
+        <item
+            android:id="@+id/route_planner"
+            android:icon="@android:drawable/ic_menu_today"
+            android:title="Route Planner"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/semester_plan"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="Semester"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/course_review"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/course_review" />
+        <item
+            android:id="@+id/timer"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="Timer"
+            tools:ignore="HardcodedText" />
+    </group>
+
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/log_in"
+                android:icon="@android:drawable/ic_menu_upload"
+                android:title="Log In"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/Overview"
+                android:icon="@android:drawable/ic_menu_zoom"
+                android:title="Summary"
+                tools:ignore="HardcodedText" />
+        </menu>
+    </item>
+
+</menu>

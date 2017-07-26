@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/Pick_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Pick: 1 ~ 3 courses for current semester"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Pick_course2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Pick_course"
+        android:layout_marginLeft="20dp"
+        android:text="Please select the route plan first"
+        android:textColor="@color/goldhex"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/course_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Pick_course2"
+        android:layout_alignStart="@+id/Pick_course2"
+        android:layout_below="@+id/Pick_course2"
+        android:layout_marginTop="20dp"
+        android:text="Course 1"
+        android:textColor="@color/bluehex"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/course_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/course_1"
+        android:layout_alignStart="@+id/course_1"
+        android:layout_below="@+id/course_1"
+        android:layout_marginTop="20dp"
+        android:text="Course 2:"
+        android:textColor="@color/bluehex"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/course_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/course_2"
+        android:layout_alignStart="@+id/course_2"
+        android:layout_below="@+id/course_2"
+        android:layout_marginTop="20dp"
+        android:text="Course 3:"
+        android:textColor="@color/bluehex"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/confirm_sem_course"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Confirm"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/pick_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/course_1"
+        android:layout_alignStart="@+id/course_1"
+        android:layout_below="@+id/confirm_sem_course"
+        android:layout_marginTop="17dp"
+        android:text="Mark Course as completed or Incomplete"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner_1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/course_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toRightOf="@id/course_1"
+        android:drawSelectorOnTop="true"
+        tools:ignore="RtlHardcoded" />
+
+
+    <Spinner
+        android:id="@+id/spinner_2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_1"
+        android:layout_alignStart="@+id/spinner_1"
+        android:layout_alignBottom= "@+id/course_2"
+        android:drawSelectorOnTop="true"
+        tools:ignore="RtlHardcoded" />
+
+    <Spinner
+        android:id="@+id/spinner_3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/course_3"
+        android:layout_alignLeft="@id/spinner_2"
+        android:drawSelectorOnTop="true"
+        tools:ignore="RtlHardcoded" />
+
+
+    <Spinner
+        android:id="@+id/spinner_4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_instruction"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/completed_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Completed"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner_5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/completed_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/uncompleted_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/completed_button"
+        android:layout_alignRight="@+id/completed_button"
+        android:layout_below="@+id/spinner_5"
+        android:layout_marginTop="20dp"
+        android:text="UnCompleted"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

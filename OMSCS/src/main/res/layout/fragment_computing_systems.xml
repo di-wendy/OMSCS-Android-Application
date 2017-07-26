@@ -1,0 +1,209 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.omscs_starter.Fragments.ComputingSystems">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/core_courses"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/goldhex"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CS 6505 Computability, Algorithms, and Complexity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="9dp"
+        android:text="Pick (2) cores from:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/goldhex"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/check_6210"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:checked="true"
+        android:fontFamily="sans-serif"
+        android:text="@string/_6210_advanced_os"
+        android:textSize="12sp"
+        tools:ignore="UnusedAttribute" />
+
+    <CheckBox
+        android:id="@+id/check_6400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/check_6210"
+        android:text="6400 Database Design"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/check_6250"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="6250 Computer Network"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/check_6400"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9" />
+
+    <CheckBox
+        android:id="@+id/check_6300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/check_6250"
+        android:layout_alignStart="@+id/check_6250"
+        android:layout_below="@+id/check_6250"
+        android:checked="false"
+        android:text="6300 Software Development"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Elective"
+        android:textColor="@color/goldhex"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/check_6340"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <ListView
+        android:id="@+id/course_list_computing"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignEnd="@+id/check_6220"
+        android:layout_alignRight="@+id/check_6220"
+        android:layout_below="@+id/textView12" />
+
+    <Button
+        android:id="@+id/update_computing"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/course_list_computing"
+        android:layout_centerHorizontal="true"
+        android:text="Update"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/check_6290"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6290 High-Performance Computer Architecture"
+        android:textSize="12sp"
+        android:layout_below="@+id/check_6400"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/check_6290"
+        android:text="Pick (3) electives from"
+        android:textColor="@color/goldhex"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/check_6035"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:checked="true"
+        android:text="@string/_6035_intro_infor_security"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/check_6310"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/check_6035"
+        android:layout_alignBottom="@+id/check_6035"
+        android:layout_alignLeft="@+id/check_6250"
+        android:layout_toEndOf="@+id/check_6035"
+        android:layout_toRightOf="@+id/check_6035"
+        android:checked="true"
+        android:text="6310 Software Architecture"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <CheckBox
+        android:id="@+id/check_6262"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/check_6035"
+        android:checked="true"
+        android:text="6262 Network Security"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/check_6220"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/check_6310"
+        android:layout_below="@+id/check_6310"
+        android:layout_toEndOf="@+id/check_6035"
+        android:layout_toRightOf="@+id/check_6035"
+        android:text="@string/_6220_high_perform_computing"
+        android:textSize="12sp"
+        tools:ignore="RtlHardcoded" />
+
+    <CheckBox
+        android:id="@+id/check_6340"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/check_6262"
+        android:text="@string/_6340_software_analysis_and_testing"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+
+

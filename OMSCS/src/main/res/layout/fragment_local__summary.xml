@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.omscs_starter.Fragments.Local_Summary">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="74dp"
+        android:gravity="center_vertical"
+        android:text="Congratulations! You've made a (10) course plan towards your degree!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/goldhex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:text="Average Difficulty:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:text="Hour/Course/Week:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Plan Rating:"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="TextView"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/difficulty"
+        android:layout_alignStart="@+id/difficulty"
+        android:layout_alignTop="@+id/textView3"
+        android:text="TextView"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="TextView"
+        android:textSize="36sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/difficulty"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/Rating"
+        android:layout_toRightOf="@+id/Rating"
+        android:text="/3.35*"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/time"
+        android:layout_toEndOf="@+id/Rating"
+        android:layout_toRightOf="@+id/Rating"
+        android:text="/14*"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="*Note: All courses average. "
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/Rating"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

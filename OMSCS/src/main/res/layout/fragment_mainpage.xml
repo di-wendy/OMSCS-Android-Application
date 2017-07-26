@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.omscs_starter.Fragments.MainPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingTop="60dp"
+        android:weightSum="1"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/yellowjackets"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_page_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:text="0/10"
+        android:textSize="36sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_page_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Successfully Completed!"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

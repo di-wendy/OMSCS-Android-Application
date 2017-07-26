@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/ic_popup_reminder"
+    tools:context="com.parse.omscs_starter.Fragments.Help">
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:autoText="true"
+        android:background="@android:drawable/stat_notify_chat"
+        android:text="I. The OMSCS program is an online education program opened by Georgia Institution of Techonology."
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="Deprecated,HardcodedText,TextViewEdits" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_below="@+id/textView21"
+        android:layout_marginTop="13dp"
+        android:text="@string/ii_there_are_4_specializations_please_select_them_through_route_plan"
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView22"
+        android:layout_below="@id/textView22"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="III. You can select maximum (3) semester, except the limit is (2) for the first term and (1) for the summer semester. The semester plan can be made througth the 'Semester Plan'. When you select less than 3 courses, just leave the courses identical in the spinners."
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView23"
+        android:layout_below="@id/textView23"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="IV. You can use the timer to track your time spent on each subject, whenever 'Reset' clicked, the shown time will be stored in the local database."
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView24"
+        android:layout_below="@id/textView24"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="V. When you sign up, your time spent on each subject can be shared with other fellow students."
+        android:textColor="@color/bluehex"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</RelativeLayout>

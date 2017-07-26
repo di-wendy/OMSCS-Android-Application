@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.omscs_starter.Fragments.Fragment_others">
+
+    <ListView
+        android:id="@+id/course_time_list"
+        style="@style/Widget.AppCompat.ListView.Menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textAlignment="center" />
+
+</RelativeLayout>
